@@ -1,17 +1,21 @@
 import {useState} from 'react';
 
-const Dropdown = () => {
-    const [cityState, setCityState] = useState("Kaikki kaupungit");
-    
+const Dropdown = ({onCityChange}) => {
+    const [cityState, setCityState] = useState('allCities');
+
+
     return (
         <div className = "selectionContainer">
-            <select value={cityState} onChange = {e=>setCityState(e.target.value)}
-            >
-                <option value = 'Kaikki kaupungit'>Kaikki kaupungit</option>
+            <select value={cityState} onChange = {
+                e=>{
+                setCityState(e.target.value);
+                onCityChange(e.target.value);}
+                }>
+                <option value = 'allCities' >Kaikki kaupungit</option>
                 <option value = 'Helsinki'>Helsinki</option>
-                <option value = 'Tampere'>Tampere</option>
-                <option value = 'Jyväskylä'>Jyväskylä</option>
+                <option value = 'Jyvaskyla'>Jyväskylä</option>
                 <option value = 'Kuopio'>Kuopio</option>
+                <option value = 'Tampere' >Tampere</option>
             </select>
         </div>
     )
