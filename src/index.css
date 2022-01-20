@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #F8F9FA;
-  font-family: 'Arial Regular'; 
+  font-family: 'Arial Regular', '-apple-system','Arial'; 
   font-weight: normal;
 }
 
