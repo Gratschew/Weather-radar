@@ -92,7 +92,7 @@ function App() {
       <Dropdown onCityChange={changeCities}/>
       <div className='weathersContainer'>
       {!!filteredWeatherInfo && filteredWeatherInfo.map((weather, i) => 
-        <div key = {i}>
+        <div key = {weather.id.toString()}>
         <CityWeather name={weather.name} weatherList={weather.list} />
         </div>
       )}

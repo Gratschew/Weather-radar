@@ -1,10 +1,10 @@
 import React from 'react';
 
 const HourlyWeatherCard = ({ list }) => {
-
+   console.log(list);
   return<div className='hourlyWeatherCards'>
-   {!!list && list.map((hourly, i) => (
-    <div key = {i} className = "hourlyWeatherCard"> 
+   {!!list && list.map((hourly, index) => (
+    <div key = {index.toString()} className = "hourlyWeatherCard"> 
       <div className = 'hourlyWeather'>
 
          {/* Format time */}
