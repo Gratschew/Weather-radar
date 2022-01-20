@@ -1,18 +1,19 @@
-# Getting Started with Create React App
+# Weather Radar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with React.
 
-## Available Scripts
+## Download instructions
 
-In the project directory, you can run:
+### 1. Clone the repo using `git clone git://github.com/Gratschew/Weather-radar.git` or `git clone git@github.com:Gratschew/Weather-radar.git`
 
-### `npm start`
+### 2. Have npm installed on your system and type `npm install` in the root folder
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 3. Open `.env` file and type [OpenWeather's](https://openweathermap.org/) API key in to line `REACT_APP_API_KEY=<API KEY HERE>`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 4. Type `npm start`
+
+### 5. After server is succesfully on, open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+
 
 
 ### `npm run build`
