@@ -56,7 +56,7 @@ const CityWeather = ( {name, weatherList} ) => {
         <div>Precipitation (3 h): {currWeather.rain} mm</div>
       </div>
     </div>
-    <HourlyWeatherCard list={weatherListCopy}  />
+    <HourlyWeatherCard hourlyWeatherList={weatherListCopy}  />
   </div>
   );
 };

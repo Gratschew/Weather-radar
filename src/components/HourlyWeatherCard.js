@@ -1,9 +1,8 @@
 import React from 'react';
 
-const HourlyWeatherCard = ({ list }) => {
-   console.log(list);
+const HourlyWeatherCard = ({ hourlyWeatherList }) => {
   return<div className='hourlyWeatherCards'>
-   {!!list && list.map((hourly, index) => (
+   {!!hourlyWeatherList && hourlyWeatherList.map((hourly, index) => (
     <div key = {index.toString()} className = "hourlyWeatherCard"> 
       <div className = 'hourlyWeather'>
 
